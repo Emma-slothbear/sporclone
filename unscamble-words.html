@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: words </title>
+
+<!-- b. -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["school", "house", "math", "blue", "pink", "yellow", "soup", "cake", "red",  "heads", "lead","focus","project","attack","main", "tick","modify","game", "love", "bed", ];
+// d.
+var time_limit = 300; // in seconds
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="more-words.html">more-words</a></li>
+            <li><a href="Attack-trivia.html">Attack-trivia</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/icon1.jpeg" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Unscramble the words!</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input onclick="start()" id="start" type="button" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter unscrambled words:</h3>
+
+            <!-- k.  -->
+            <input onkeyup="check()" id="guess" type="text">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+          <tr>
+        <td>hlocso</td>
+        <td>uesoh</td>
+        <td>tahm</td>
+        <td>lebu<td>
+        </tr>
+        <tr>  
+        <tr>
+        <td><span id="answer0"></span></td>
+        <td><span id="answer1"></span></td>
+        <td><span id="answer2"></span></td>
+        <td><span id="answer3"></span></td>
+        </tr>
+
+        <tr>
+        <td>iknp</td>
+        <td>elywlo</td>
+        <td>osup</td>
+        <td>kcae</td>
+        </tr>
+        <tr>   
+        <td><span id="answer4"></span></td>
+        <td><span id="answer5"></span></td>
+        <td><span id="answer6"></span></td>
+        <td><span id="answer7"></span></td> 
+        </tr>
+        <tr>
+        <td>dre</td>
+        <td>hseda</td>
+        <td>dale</td>
+        <td>ofcsu</td>
+        </tr>
+        <tr>
+        <td><span id="answer8"></span></td>
+        <td><span id="answer9"></span></td>
+        <td><span id="answer10"></span></td>
+        <td><span id="answer11"></span></td>
+        </tr>
+         <tr>
+        <td>opjterc</td>
+        <td>takact</td>
+        <td>ianm</td>
+        <td>ikct</td>
+        </tr>
+        <tr>
+        <td><span id="answer12"></span></td>
+        <td><span id="answer13"></span></td>
+        <td><span id="answer14"></span></td>
+        <td><span id="answer15"></span></td>
+        </tr>
+         <tr>
+        <td>omidyf</td>
+        <td>maeg</td>
+        <td>vloe</td>
+        <td>edb</td>
+        </tr>
+        <tr>
+        <td><span id="answer16"></span></td>
+        <td><span id="answer17"></span></td>
+        <td><span id="answer18"></span></td>
+        <td><span id="answer19"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Emma W. (aka slothbear)</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
